@@ -1,0 +1,43 @@
+.contact-us {
+    padding: 3rem 0;
+    height: auto;
+    background: #000;
+    display: flex;
+    justify-content: center;
+
+    .contact-container {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+
+        .contact-title {
+            width: 300px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .contact-form {
+            width: 400px;
+
+            input[type="text"], textarea {
+                color: #fff;
+                padding: .5rem 1.5rem;
+                outline: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
+                border: none;
+                background: #000;
+            }
+
+            textarea {
+                width: 350px;
+            }
+
+            input[type="submit"] {
+                @extend .base-btn;
+                border: none;
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+}

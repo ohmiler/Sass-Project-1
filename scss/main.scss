@@ -1,0 +1,36 @@
+// Fonts
+@import 'fonts/fonts';
+
+// Reset 
+@import 'reset/reset';
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+$primary-color: #0084ff;
+// btn base
+.base-btn {
+    padding: .5rem 1.5rem;
+    background: $primary-color;
+    color: #fff;
+    display: inline-block;
+}
+
+// Components
+@import 'components/header';
+@import 'components/about';
+@import 'components/services';
+@import 'components/portfolio';
+@import 'components/calltoaction';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/responsive768';
+@import 'components/responsive480';

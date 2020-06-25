@@ -1,0 +1,51 @@
+.portfolio {
+    height: 800px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .portfolio-container {
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        .portfolio-left {
+            padding: 0 3rem;
+            width: 30%;
+
+            h1 {
+                font-weight: bold;
+                font-size: 3rem;
+            }
+            p {
+                line-height: 1.5;
+            }
+
+            .portfolio-btn {
+                @extend .base-btn;
+                margin-top: 1rem;
+                text-decoration: none;
+            }
+        }
+        .portfolio-right {
+            width: 70%;
+
+            .portfolio-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+    
+                .portfolio-items {
+                    height: 400px;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+    }
+}

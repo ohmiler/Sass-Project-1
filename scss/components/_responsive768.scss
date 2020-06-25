@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+    header {
+        overflow: hidden;
+
+        nav {
+            margin-top: 2rem;
+            flex-direction: column;
+        }
+    }
+
+    .about-us--info {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .services-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem !important;
+
+        
+        .services-grid {
+            margin-top: 1rem;
+            .services-items {
+                width: 100% !important;
+                padding: 2rem 0 !important;
+
+                i {
+                    font-size: 2rem !important;
+                }
+
+                p {
+                    font-size: 12px;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        padding: 2rem 0;
+        height: auto;
+
+        .portfolio-container {
+            flex-direction: column;
+    
+            .portfolio-left {
+                text-align: center;
+                width: 100% !important;
+            }
+
+            .portfolio-right {
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .contact-container {
+        width: 100% !important; 
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .contact-title {
+            width: 100% !important;
+        }
+        .contact-form {
+            margin-top: 2rem;
+            width: 100% !important;
+        }
+    }
+}

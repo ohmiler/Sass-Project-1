@@ -1,0 +1,39 @@
+.about-us {
+    background: url('/img/about-us.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-us--info {
+        position: relative;
+        z-index: 10;
+        color: #fff;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .btn {
+            @extend .base-btn;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+    }
+}

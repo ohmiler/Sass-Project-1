@@ -1,0 +1,25 @@
+.call-to-action {
+    height: 500px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    .call-to-action--info {
+        width: 800px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .call-btn {
+            @extend .base-btn;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+    }
+    
+}

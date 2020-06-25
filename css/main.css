@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.base-btn, .about-us .about-us--info .btn, .portfolio .portfolio-container .portfolio-left .portfolio-btn, .call-to-action .call-to-action--info .call-btn, .contact-us .contact-container .contact-form input[type="submit"] {
+  padding: .5rem 1.5rem;
+  background: #0084ff;
+  color: #fff;
+  display: inline-block; }
+
+header {
+  background: url("/img/banner.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    color: #fff; }
+    header nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem; }
+    header nav ul.menu {
+      display: flex; }
+      header nav ul.menu li {
+        margin: 0 1.5rem; }
+        header nav ul.menu li a {
+          text-decoration: none;
+          color: #fff; }
+  header .header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; }
+    header .header-wrapper .header-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      height: 500px; }
+      header .header-wrapper .header-info h1 {
+        font-weight: bold;
+        font-size: 7rem;
+        color: #fff; }
+      header .header-wrapper .header-info p {
+        color: #fff;
+        line-height: 1.5; }
+      header .header-wrapper .header-info ul.social-icons {
+        margin-top: 2rem;
+        display: flex;
+        width: 200px;
+        justify-content: space-between; }
+        header .header-wrapper .header-info ul.social-icons a {
+          color: #fff; }
+          header .header-wrapper .header-info ul.social-icons a:hover {
+            color: #0084ff;
+            transition: 0.3s; }
+
+.about-us {
+  background: url("/img/about-us.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative; }
+  .about-us::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .about-us .about-us--info {
+    position: relative;
+    z-index: 10;
+    color: #fff; }
+    .about-us .about-us--info h1 {
+      font-size: 4rem;
+      font-weight: bold; }
+    .about-us .about-us--info p {
+      line-height: 1.5; }
+    .about-us .about-us--info .btn {
+      margin-top: 1rem;
+      text-decoration: none; }
+
+.services {
+  background: url("/img/services.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative; }
+  .services::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .services .services-container {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 3rem; }
+    .services .services-container .services-left {
+      width: 100%;
+      padding-right: 2rem; }
+      .services .services-container .services-left h1 {
+        font-weight: bold;
+        font-size: 3rem; }
+      .services .services-container .services-left p {
+        line-height: 1.5; }
+    .services .services-container .services-right {
+      width: 100%; }
+      .services .services-container .services-right .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 300px;
+        grid-gap: 1rem;
+        text-align: center; }
+        .services .services-container .services-right .services-grid .services-items {
+          background: rgba(255, 255, 255, 0.1);
+          color: #fff;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .services .services-container .services-right .services-grid .services-items i {
+            font-size: 2rem;
+            color: #0084ff; }
+          .services .services-container .services-right .services-grid .services-items h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            font-weight: bold; }
+          .services .services-container .services-right .services-grid .services-items p {
+            line-height: 1.5;
+            font-size: 12px; }
+
+.portfolio {
+  height: 800px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+  .portfolio .portfolio-container {
+    color: #fff;
+    display: flex;
+    align-items: center; }
+    .portfolio .portfolio-container .portfolio-left {
+      padding: 0 3rem;
+      width: 30%; }
+      .portfolio .portfolio-container .portfolio-left h1 {
+        font-weight: bold;
+        font-size: 3rem; }
+      .portfolio .portfolio-container .portfolio-left p {
+        line-height: 1.5; }
+      .portfolio .portfolio-container .portfolio-left .portfolio-btn {
+        margin-top: 1rem;
+        text-decoration: none; }
+    .portfolio .portfolio-container .portfolio-right {
+      width: 70%; }
+      .portfolio .portfolio-container .portfolio-right .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); }
+        .portfolio .portfolio-container .portfolio-right .portfolio-grid .portfolio-items {
+          height: 400px; }
+          .portfolio .portfolio-container .portfolio-right .portfolio-grid .portfolio-items img {
+            width: 100%;
+            height: 100%;
+            display: block; }
+
+.call-to-action {
+  height: 500px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; }
+  .call-to-action .call-to-action--info {
+    width: 800px; }
+    .call-to-action .call-to-action--info h1 {
+      font-size: 3rem;
+      font-weight: bold; }
+    .call-to-action .call-to-action--info .call-btn {
+      margin-top: 1rem;
+      text-decoration: none; }
+
+.contact-us {
+  padding: 3rem 0;
+  height: auto;
+  background: #000;
+  display: flex;
+  justify-content: center; }
+  .contact-us .contact-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff; }
+    .contact-us .contact-container .contact-title {
+      width: 300px;
+      font-size: 2rem;
+      font-weight: bold; }
+    .contact-us .contact-container .contact-form {
+      width: 400px; }
+      .contact-us .contact-container .contact-form input[type="text"], .contact-us .contact-container .contact-form textarea {
+        color: #fff;
+        padding: .5rem 1.5rem;
+        outline: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
+        border: none;
+        background: #000; }
+      .contact-us .contact-container .contact-form textarea {
+        width: 350px; }
+      .contact-us .contact-container .contact-form input[type="submit"] {
+        border: none;
+        margin-top: 1rem; }
+
+footer {
+  background: #1d1d1d;
+  padding: 2rem;
+  color: #fff;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  header {
+    overflow: hidden; }
+    header nav {
+      margin-top: 2rem;
+      flex-direction: column; }
+  .about-us--info {
+    text-align: center;
+    padding: 2rem; }
+  .services-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem !important; }
+    .services-container .services-grid {
+      margin-top: 1rem; }
+      .services-container .services-grid .services-items {
+        width: 100% !important;
+        padding: 2rem 0 !important; }
+        .services-container .services-grid .services-items i {
+          font-size: 2rem !important; }
+        .services-container .services-grid .services-items p {
+          font-size: 12px;
+          padding: 0 1rem; }
+  .portfolio {
+    padding: 2rem 0;
+    height: auto; }
+    .portfolio .portfolio-container {
+      flex-direction: column; }
+      .portfolio .portfolio-container .portfolio-left {
+        text-align: center;
+        width: 100% !important; }
+      .portfolio .portfolio-container .portfolio-right {
+        width: 100%;
+        margin-top: 2rem; }
+  .contact-container {
+    width: 100% !important;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; }
+    .contact-container .contact-title {
+      width: 100% !important; }
+    .contact-container .contact-form {
+      margin-top: 2rem;
+      width: 100% !important; } }
+
+@media screen and (max-width: 480px) {
+  .header-info h1 {
+    font-size: 4rem !important; }
+  .services {
+    height: auto;
+    padding: 2rem 0; }
+    .services .services-container .services-left {
+      width: 100%;
+      padding: 0; }
+    .services .services-container .services-right {
+      width: 100%; }
+      .services .services-container .services-right .services-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; }
+  .portfolio-grid {
+    grid-template-columns: 1fr !important; } }
